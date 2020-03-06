@@ -8,7 +8,7 @@ This repository holds the source code for a simple [React Native](https://reactn
 
 To run a simple application, you will need Node.js and npm. [Get it here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) if it’s not already installed on your machine.
 
-###### Then install the Expo CLI globally bu running:
+###### Then install the Expo CLI globally by running:
 
 ```bash
 npm install -g expo-cli
