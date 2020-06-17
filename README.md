@@ -21,7 +21,8 @@ npm install -g expo-cli
 ###### 1) Clone the sample project: 
 
 ```bash
-git clone https://github.com/flexmonster/pivot-react-native.git && cd pivot-react-native
+git clone https://github.com/flexmonster/pivot-react-native.git 
+cd pivot-react-native
 ```
 
 ###### 2) Install the dependencies defined in `package.json`: 
