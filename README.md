@@ -46,4 +46,4 @@ expo start
 
 ## <a name="usage"></a>Usage ##
 
-For more details, refer to [Flexmonster Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) tutorial.
+For details on usage, refer to [Flexmonster Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) tutorial.
