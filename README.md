@@ -6,9 +6,11 @@ Website: www.flexmonster.com
 
 Flexmonster Pivot is a powerful Javascript tool for interactive web reporting. It allows you to visualize and analyze data from JSON, CSV, SQL, NoSQL, Elasticsearch, and OLAP data sources fast and conveniently. Flexmonster is designed to integrate seamlessly with any client-side framework and can be easily embedded into your application.
 
-This repository holds the source code for a simple [React Native](https://reactnative.dev/) and Flexmonster Pivot Table & Charts project.
+This repository holds the source code for a simple [React Native](https://reactnative.dev/) and Flexmonster Pivot Table & Charts project:
+- [Prerequisites](#prerequisites)
+- [Installation & Usage](#usage)
 
-## Prerequisites
+## <a name="prerequisites"></a>Prerequisites ##
 
 To run a simple application, you will need Node.js and npm. [Get it here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) if it’s not already installed on your machine.
 
@@ -19,7 +21,7 @@ npm install -g expo-cli
 ```
 
 
-## Installation & Usage
+## <a name="usage"></a>Installation & Usage ##
 
  
 1) Clone the sample project: 
@@ -41,4 +43,4 @@ npm i
 expo start
 ```
 
-For more details please refer to [Flexmonster Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) tutorial.
+For more details, refer to [Flexmonster Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) tutorial.
