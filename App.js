@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import PivotTable from './PivotTable'
+import PivotTable from './components/PivotTable'
 
 const App = () => {
    return (
