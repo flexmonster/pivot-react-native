@@ -57,21 +57,12 @@ export default class PivotTable extends React.Component {
           "category.[cars]"
       ]
     });
-    this.flexmonster.setOptions({
-      "viewType": "charts",
-      "chart": {
-        "type": "column"
-      }
-    });
-    this.flexmonster.refresh();
+    this.flexmonster.showCharts("column");
   }
 
   showGrid = () => {
     this.flexmonster.setFilter("Category", {});
-    this.flexmonster.setOptions({
-      "viewType": "grid"
-    });
-    this.flexmonster.refresh();
+    this.flexmonster.showGrid();
   }
 
   render() {
