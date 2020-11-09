@@ -1,22 +1,30 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import * as FlexmonsterReactNative from 'react-native-flexmonster';
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
+import PivotTable from './PivotTable'
 
-export default function App() {
-  return (
-      <View style={{ flex: 1 }}>
-            <FlexmonsterReactNative.Pivot
-             report="https://cdn.flexmonster.com/reports/report.json"
-            />
+const App = () => {
+   return (
+      <View style = {styles.container}>
+         <View style = {styles.pivotExampleContainer}>
+            <PivotTable/>
+         </View>
       </View>
-  );
+   )
 }
+export default App
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const styles = StyleSheet.create ({
+   container: {
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      alignItems: 'flex-end',
+      marginHorizontal: 16,
+      marginVertical: 16,
+      flex: 1
+   },
+   pivotExampleContainer: {
+      marginTop: 16,
+      flex: 1,
+      width: '100%'
+   }
+})
