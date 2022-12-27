@@ -1,46 +1,45 @@
-import React, { createRef } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import * as FlexmonsterReactNative from 'react-native-flexmonster';
 
-export default class PivotTable extends React.Component {
+class PivotTable extends React.Component {
 
   constructor(props) {
     super(props);
-    this.flexmonster = createRef();
   }
 
   report = {
     "dataSource": {
       "type": "csv",
       "filename": "https://cdn.flexmonster.com/data/data.csv"
-      },
-      "slice": {
-          "rows": [
-              {
-                  "uniqueName": "Category"
-              }
-          ],
-          "columns": [
-              {
-                  "uniqueName": "Color"
-              },
-              {
-                  "uniqueName": "[Measures]"
-              }
-          ],
-          "measures": [
-              {
-                  "uniqueName": "Price",
-                  "aggregation": "sum"
-              }
-          ]
-      },
-      "options": {
-        "chart": {
-          "showFilter": false,
-          "showMeasures": false
+    },
+    "slice": {
+      "rows": [
+        {
+          "uniqueName": "Category"
         }
+      ],
+      "columns": [
+        {
+          "uniqueName": "Color"
+        },
+        {
+          "uniqueName": "[Measures]"
+        }
+      ],
+      "measures": [
+        {
+          "uniqueName": "Price",
+          "aggregation": "sum"
+        }
+      ]
+    },
+    "options": {
+      "chart": {
+        "showFilter": false,
+        "showMeasures": false
       }
+    }
   }
 
   onclickHandler = (cell) => {
@@ -54,7 +53,7 @@ export default class PivotTable extends React.Component {
   showChart = () => {
     this.flexmonster.setFilter("Category", {
       "members": [
-          "category.[cars]"
+        "category.[cars]"
       ]
     });
     this.flexmonster.showCharts("column");
@@ -66,19 +65,21 @@ export default class PivotTable extends React.Component {
   }
 
   render() {
+    const { forwardedRef, ...rest } = this.props;
+    this.flexmonster = forwardedRef
     return (
       <View style={{ flex: 1 }}>
         <View style={styles.buttonControllsContainer}>
-              <View style={styles.buttonContainer}>
-                <TouchableOpacity activeOpacity={0.8} onPress={this.showChart} style={styles.buttonFirst}>
-                  <Text style={styles.buttonText}>Show Chart</Text>
-                </TouchableOpacity>
-              </View>
-              <View style={styles.buttonContainer}>
-                <TouchableOpacity activeOpacity={0.8} onPress={this.showGrid} style={styles.button}>
-                  <Text style={styles.buttonText}>Show Grid</Text>
-                </TouchableOpacity>
-              </View>
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity activeOpacity={0.8} onPress={this.showChart} style={styles.buttonFirst}>
+              <Text style={styles.buttonText}>Show Chart</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity activeOpacity={0.8} onPress={this.showGrid} style={styles.button}>
+              <Text style={styles.buttonText}>Show Grid</Text>
+            </TouchableOpacity>
+          </View>
         </View>
         <FlexmonsterReactNative.Pivot style={{ flexGrow: 2 }}
           report={this.report}
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonContainer: {
-      flex: 1,
+    flex: 1,
   },
   button: {
     backgroundColor: "#df3800",
@@ -120,5 +121,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     textTransform: "uppercase",
     textAlign: "center"
-  }, 
+  },
 });
+
+export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable forwardedRef={ref} {...props} />);

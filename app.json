@@ -3,7 +3,7 @@
     "name": "Flexmonster Pivot Table & Charts integration with React Native",
     "slug": "pivot-react-native",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "sdkVersion": "47.0.0",
     "platforms": [
       "ios",
       "android",

@@ -1,19 +1,20 @@
-import React from 'react'
-import { View, StyleSheet } from 'react-native'
-import PivotTable from './components/PivotTable'
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { PivotTableComponent } from './components/PivotTable';
 
 const App = () => {
+   const ref = React.createRef();
    return (
-      <View style = {styles.container}>
-         <View style = {styles.pivotExampleContainer}>
-            <PivotTable/>
+      <View style={styles.container}>
+         <View style={styles.pivotExampleContainer}>
+            <PivotTableComponent ref={ref} />
          </View>
       </View>
    )
 }
 export default App
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
    container: {
       flexDirection: 'column',
       justifyContent: 'space-between',
