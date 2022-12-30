@@ -116,4 +116,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />);
+//export { PivotTable as PivotTableComponent }; // React <17 
+export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />); // React >=18

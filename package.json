@@ -11,10 +11,10 @@
     "expo": "^47.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "^0.70.6",
-    "react-native-flexmonster": "^2.9.42-beta1",
-    "react-native-web": "^0.18.10",
-    "react-native-webview": "^11.26.0"
+    "react-native": "^0.68.5",
+    "react-native-flexmonster": "latest",
+    "react-native-web": "^0.17.6",
+    "react-native-webview": "^11.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",

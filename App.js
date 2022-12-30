@@ -6,12 +6,12 @@ const App = () => {
    return (
       <View style={styles.container}>
          <View style={styles.pivotExampleContainer}>
-            <PivotTableComponent/>
+            <PivotTableComponent />
          </View>
       </View>
    )
 }
-export default App
+export default App;
 
 const styles = StyleSheet.create({
    container: {
