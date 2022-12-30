@@ -3,11 +3,10 @@ import { StyleSheet, View } from 'react-native';
 import { PivotTableComponent } from './components/PivotTable';
 
 const App = () => {
-   const ref = React.createRef();
    return (
       <View style={styles.container}>
          <View style={styles.pivotExampleContainer}>
-            <PivotTableComponent ref={ref} />
+            <PivotTableComponent/>
          </View>
       </View>
    )

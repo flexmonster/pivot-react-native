@@ -4,10 +4,6 @@ import * as FlexmonsterReactNative from 'react-native-flexmonster';
 
 class PivotTable extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   report = {
     "dataSource": {
       "type": "csv",
@@ -65,8 +61,6 @@ class PivotTable extends React.Component {
   }
 
   render() {
-    const { forwardedRef, ...rest } = this.props;
-    this.flexmonster = forwardedRef
     return (
       <View style={{ flex: 1 }}>
         <View style={styles.buttonControllsContainer}>
@@ -84,9 +78,7 @@ class PivotTable extends React.Component {
         <FlexmonsterReactNative.Pivot style={{ flexGrow: 2 }}
           report={this.report}
           cellclick={this.onclickHandler}
-          ref={
-            (flexmonster) => { this.flexmonster = flexmonster }
-          }
+          ref={flexmonster => this.flexmonster = flexmonster}
         />
       </View >
     );
@@ -124,4 +116,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable forwardedRef={ref} {...props} />);
+export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />);
