@@ -26,24 +26,31 @@ npm install -g expo-cli
 
  
 1) Clone the sample project: 
-
-```bash
-git clone https://github.com/flexmonster/pivot-react-native.git 
-cd pivot-react-native
-```
-
+    ```bash
+    git clone https://github.com/flexmonster/pivot-react-native.git 
+    cd pivot-react-native
+    ```
 2) Install the dependencies defined in `package.json`: 
-
-```bash
-npm i
-```
-
-3) Run the sample project: 
-
-```bash
-expo start
-```
-
+    ```bash
+    npm i
+    ```
+    If the above command failed, run it with the `--force` flag:
+    ```bash
+    npm i --force
+    ```
+3) For React 17 or earlier, change [the last two lines of code](https://github.com/flexmonster/pivot-react-native/blob/master/components/PivotTable.js#L119-L120) in the `components/PivotTable.js`:
+    - Uncomment the following line:
+       ```js
+       //export { PivotTable as PivotTableComponent }; // React <17 
+       ```
+    - Comment the line below:
+       ```js
+       export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />); // React >=18
+       ```
+4) Run the sample project: 
+    ```bash
+    expo start
+    ```
 ## <a name="usage"></a>Usage ##
 
 For details on usage, refer to [Flexmonster Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) tutorial.
