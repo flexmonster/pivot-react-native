@@ -41,11 +41,11 @@ npm install -g expo-cli
 3) For React 17 or earlier, change [the last two lines of code](https://github.com/flexmonster/pivot-react-native/blob/master/components/PivotTable.js#L119-L120) in the `components/PivotTable.js`:
     - Uncomment the following line:
        ```js
-       //export { PivotTable as PivotTableComponent }; // React <17 
+       //export { PivotTable as PivotTableComponent };
        ```
     - Comment the line below:
        ```js
-       export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />); // React >=18
+       export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />);
        ```
 4) Run the sample project: 
     ```bash
