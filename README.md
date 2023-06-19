@@ -12,7 +12,7 @@ Table of contents:
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Related Flexmonster docs](#related-flexmonster-docs)
 
 ## <a name="prerequisites"></a>Prerequisites ##
 
@@ -46,6 +46,6 @@ Table of contents:
     ```bash
     expo start
     ```
-## <a name="usage"></a>Usage ##
+## <a name="related-flexmonster-docs"></a>Related Flexmonster docs ##
 
-For details on usage, refer to the [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) guide.
+- [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) — learn how to integrate Flexmonster into a React Native project.
