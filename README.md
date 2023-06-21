@@ -1,6 +1,6 @@
 # Flexmonster Pivot Table &amp; Charts integration with React Native
-[![Flexmonster Pivot Table & Charts](https://cdn.flexmonster.com/landing.png)](https://flexmonster.com)
-Website: www.flexmonster.com
+[![Flexmonster Pivot Table & Charts](https://cdn.flexmonster.com/landing.png)](https://www.flexmonster.com?r=github)
+Website: [www.flexmonster.com](https://www.flexmonster.com?r=github)
 
 ## Flexmonster Pivot Table & Charts
 
@@ -48,4 +48,4 @@ Table of contents:
     ```
 ## <a name="related-flexmonster-docs"></a>Related Flexmonster docs ##
 
-- [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native/) — learn how to integrate Flexmonster into a React Native project.
+- [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native?r=github) — learn how to integrate Flexmonster into a React Native project.
