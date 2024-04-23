@@ -1,6 +1,8 @@
 # React Native pivot grid | Flexmonster Pivot Table & Charts sample project with React Native
-[![Flexmonster Pivot Table & Charts](https://cdn.flexmonster.com/readmes/react_native.webp)](https://www.flexmonster.com?r=github)
-Website: [www.flexmonster.com](https://www.flexmonster.com?r=github)
+[![Flexmonster Pivot Table & Charts](https://cdn.flexmonster.com/readmes/react_native.webp)](https://www.flexmonster.com?r=sample_reactnative)
+Website: [flexmonster.com](https://www.flexmonster.com?r=sample_reactnative)
+
+[![Github Stars](https://img.shields.io/github/stars/flexmonster?style=social)](https://github.com/flexmonster) [![Twitter](https://img.shields.io/twitter/follow/Flexmonster?style=social)](https://twitter.com/Flexmonster)
 
 ## Flexmonster Pivot Table & Charts
 
@@ -51,7 +53,7 @@ Table of contents:
     ```
 ## Related Flexmonster docs
 
-- [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native?r=github) — learn how to integrate Flexmonster into a React Native project.
+- [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native?r=sample_reactnative) — learn how to integrate Flexmonster into a React Native project.
 
 ## Support and feedback
 
@@ -61,7 +63,7 @@ To share your feedback or ask questions, contact our Tech team by raising a tick
 
 ## Flexmonster licensing
 
-This sample project uses [Flexmonster React Native wrapper](https://github.com/flexmonster/react-native-flexmonster?r=sample_reactnative), which is released as an MIT-licensed (free and open-source) add-on to Flexmonster Pivot.
+This sample project uses [Flexmonster React Native wrapper](https://github.com/flexmonster/react-native-flexmonster/), which is released as an MIT-licensed (free and open-source) add-on to Flexmonster Pivot.
 
 To learn about Flexmonster Pivot licenses, visit the [Flexmonster licensing page](https://www.flexmonster.com/pivot-table-editions-and-pricing?r=sample_reactnative). 
 If you want to test our product, we provide a 30-day free trial.
