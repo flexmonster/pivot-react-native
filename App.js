@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       alignItems: 'flex-end',
       marginHorizontal: 16,
-      marginVertical: 16,
+      marginVertical: 26,
       flex: 1
    },
    pivotExampleContainer: {

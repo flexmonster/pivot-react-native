@@ -1,9 +1,11 @@
 {
   "expo": {
+    "entryPoint": "./App.js",
     "name": "Flexmonster Pivot Table & Charts integration with React Native",
     "slug": "pivot-react-native",
     "privacy": "public",
-    "sdkVersion": "47.0.0",
+    "sdkVersion": "52.0.0",
+    "newArchEnabled": true,
     "platforms": [
       "ios",
       "android",
@@ -25,6 +27,12 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
     }
   }
 }

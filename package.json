@@ -8,17 +8,17 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^49.0.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "^0.72.4",
+    "expo": "~52.0.11",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.3",
     "react-native-flexmonster": "latest",
-    "react-native-web": "^0.19.7",
-    "react-native-webview": "^13.3.1"
+    "react-native-web": "~0.19.13",
+    "react-native-webview": "13.12.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.10",
-    "babel-preset-expo": "^9.5.1"
+    "@babel/core": "^7.25.2",
+    "babel-preset-expo": "^12.0.2"
   },
   "private": true
 }
