@@ -22,7 +22,6 @@ Table of contents:
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
-- [Expo CLI](https://expo.dev/tools#cli)
 
 ## Installation
 
@@ -34,7 +33,7 @@ Table of contents:
     ```bash
     npm install
     ```
-    If the above command failed, run it with the `--force` flag:
+    If the above command fails, run it with the `--force` flag:
     ```bash
     npm install --force
     ```
@@ -47,9 +46,9 @@ Table of contents:
        ```js
        export var PivotTableComponent = React.forwardRef((props, ref) => <PivotTable />);
        ```
-4) Run the sample project: 
+4) Run the sample project from the console: 
     ```bash
-    expo start
+    npx expo start
     ```
 ## Related Flexmonster docs
 
