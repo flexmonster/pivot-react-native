@@ -50,6 +50,7 @@ Table of contents:
     ```bash
     npx expo start
     ```
+    To shut down the project from the console, press `Ctrl + C` (`Control + C` on macOS).
 ## Related Flexmonster docs
 
 - [Integration with React Native](https://www.flexmonster.com/doc/integration-with-react-native?r=sample_reactnative) — learn how to integrate Flexmonster into a React Native project.
