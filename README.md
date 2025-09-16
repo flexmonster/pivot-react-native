@@ -22,6 +22,7 @@ Table of contents:
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
+- [Expo SDK 52](https://expo.dev/go)
 
 ## Installation
 
